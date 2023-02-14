@@ -27,7 +27,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img width="505" alt="Screenshot 2023-02-14 at 15 20 14" src="https://user-images.githubusercontent.com/56078226/218765128-37dd1b7f-6740-4592-ae23-a2cde1d96ce4.png">
 
 
   ### Je ambitie: 
