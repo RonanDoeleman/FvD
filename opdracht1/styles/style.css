@@ -95,7 +95,7 @@ h1::after{
 	width: 160px;
 	height: 120px;
 	background-color: var(--color-background);
-	margin-right: 3em;
+	margin-right: 3.1em;
 	margin-top: -.06em;
 	align-self: center;
 	animation: slide-background;
@@ -136,14 +136,14 @@ h2 span:nth-of-type(3){
 @keyframes balancen {
   0% {
     transform: 
-		translateY(.49em)
+		translateY(.47em)
 		translateX(.3em)
 		rotate(-20deg);
   }
 
 	15%{
 		transform: 
-		translateY(.49em)
+		translateY(.48em)
 		translateX(.20em)
 		rotate(-30deg);
 	}
@@ -157,7 +157,7 @@ h2 span:nth-of-type(3){
 
 	40% {
     transform: 
-		translateY(.51em) 
+		translateY(.52em) 
 		translateX(0)
 		rotate(-60deg);
   }
@@ -165,21 +165,21 @@ h2 span:nth-of-type(3){
 	50% {
     transform: 
 		translateY(1.57em)
-		translateX(-.6em)
+		translateX(-.7em)
 		rotate(-90deg);
   }
 
 	60% {
     transform: 
 		translateY(1.57em)
-		translateX(-.6em)
+		translateX(-.7em)
 		rotate(-90deg);
   }
 
 	70% {
     transform: 
 		translateY(1.57em)
-		translateX(-.6em)
+		translateX(-.7em)
 		rotate(0deg);
   }
 
@@ -282,15 +282,15 @@ h2 span:nth-of-type(3){
 	}
 
 	30%{
-		transform: translateX(120%);
+		transform: translateX(125%);
 	}
 
 	50%{
-		transform: translateX(120%);
+		transform: translateX(125%);
 	}
 
 	100%{
-		transform: translateX(120%);
+		transform: translateX(125%);
 	}
 	
 }
