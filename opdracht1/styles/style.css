@@ -64,7 +64,7 @@ h1{
 	font-style: italic;
 	margin-top: .5em;
 	margin-bottom: .2em;
-	margin-left: .6em;
+	margin-left: .5em;
 	font-size: 12em;
 	position:relative;
   display:flex;
@@ -112,7 +112,6 @@ h2{
 }
 
 h2 span {  
-	opacity: 1;
 	animation: fade-text;
 	animation-duration: 1s;
 }
@@ -183,17 +182,17 @@ h2 span:nth-of-type(3){
 		rotate(0deg);
   }
 
-	75% {
+	80% {
     transform: 
 		translateY(1.57em)
-		translateX(-.43em)
+		translateX(-.44em)
 		rotate(0deg);
   }
 
 	100% {
     transform: 
 		translateY(1.57em)
-		translateX(-.43em)
+		translateX(-.44em)
 		rotate(0deg);
   }
 }
@@ -223,7 +222,7 @@ h2 span:nth-of-type(3){
 	40%{
     transform: 
 		translateY(.50em)
-		translateX(.2em)
+		translateX(.16em)
 		rotate(-50deg);
   }
 
