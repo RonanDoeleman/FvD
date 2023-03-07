@@ -67,7 +67,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Iets wat ik nog wou maken was dat als de letters elkaar raken bij het omvallen, de letter N verder weg wordt geduwd zodat ze niet door elkaar heen   gaan. Wat ik ook lastig vond was het "smooth" animeren van het omvallen/balanceren.
 
 
-
 ## Opdracht 2 plan
 
 <details>
