@@ -55,19 +55,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
 
   <img width="1138" alt="Screenshot 2023-03-07 at 17 19 20" src="https://user-images.githubusercontent.com/56078226/223483335-22a452ac-b1e0-4345-8fc8-21c2729a5e16.png">
 
   Ik heb geleerd hoe je met behulp van ::before en ::after elementen kan aanmaken zonder dat dit in je html komt. Hiermee kan je coole style effecten creë
-  ren.
+  ren. Ook heb ik geleerd hoe je @keyframes kan gebruiken om elementen te laten bewegen.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
-</details>
+  Iets wat ik nog wou maken was dat als de letters elkaar raken bij het omvallen, de letter N verder weg wordt geduwd zodat ze niet door elkaar heen   gaan. Wat ik ook lastig vond was het "smooth" animeren van het balanceren zodat het niet te houterig eruit ziet.
 
 
 
