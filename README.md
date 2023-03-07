@@ -14,9 +14,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. https://bennettfeely.com/clippy/
+  2. https://stackoverflow.com/questions/4359627/stopping-a-css3-animation-on-last-frame
+  3. https://www.youtube.com/watch?v=zGiirUiWslI&ab_channel=KevinPowell (Before and After pseudo elements explained - part one: how they work)
+  4. 
 
 
 
@@ -32,10 +33,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ::before and ::after begrijpen en toepassen
+  - @Keyframes beheersen en toepassen
+  - Dark mode feature maken
  
 </details>
 
