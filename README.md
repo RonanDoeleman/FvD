@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 1 reflectie 
 
-<details *open*>
+<details open>
   <summary>uitwerken bij afronden opdracht (voor week 4)</summary>
 
 
@@ -59,7 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img width="1138" alt="Screenshot 2023-03-07 at 17 19 20" src="https://user-images.githubusercontent.com/56078226/223483335-22a452ac-b1e0-4345-8fc8-21c2729a5e16.png">
 
   Ik heb geleerd hoe je met behulp van ::before en ::after elementen kan aanmaken zonder dat dit in je html komt. Hiermee kan je coole style effecten creë
-  ren. Ook heb ik geleerd hoe je @keyframes kan gebruiken om elementen te laten bewegen.
+ ren. Ook heb ik geleerd hoe je @keyframes kan gebruiken om elementen te laten bewegen.
 
 
   ### Dit was lastig/Is niet gelukt:
