@@ -43,7 +43,7 @@ button:not[disabled], summary {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-text:#cf082c;
+		--color-text: #eee;
 		--color-background:rgb(26, 26, 26);
 	}
 }
@@ -109,7 +109,7 @@ h2{
 	font-style: normal;
 	margin-top: 2em;
 	font-size: 2em;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 }
 
 h2 span {  
