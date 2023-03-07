@@ -43,9 +43,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Opdracht 1 reflectie *open*
+## Opdracht 1 reflectie 
 
-<details>
+<details *open*>
   <summary>uitwerken bij afronden opdracht (voor week 4)</summary>
 
 
