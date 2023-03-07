@@ -17,7 +17,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. https://bennettfeely.com/clippy/
   2. https://stackoverflow.com/questions/4359627/stopping-a-css3-animation-on-last-frame
   3. https://www.youtube.com/watch?v=zGiirUiWslI&ab_channel=KevinPowell (Before and After pseudo elements explained - part one: how they work)
-  4. 
+  4. https://www.w3schools.com/cssref/tryit.php?filename=trycss3_nth-child (css selectors)
 
 
 
