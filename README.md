@@ -28,7 +28,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  [IMG_0694](https://user-images.githubusercontent.com/56078226/222753550-90f2caa2-5ac8-46cd-b5b5-1a195204de69.jpg)
+  [Storyboard](https://user-images.githubusercontent.com/56078226/223484682-925fb318-9d88-4b5e-93ff-4e28c8c441a0.jpg)
+?dl=0)
 
 
   ### Je ambitie: 
@@ -48,7 +49,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img width="381" alt="Screenshot 2023-03-07 at 17 17 37" src="https://user-images.githubusercontent.com/56078226/223483086-2b80dd6d-474d-47bc-96af-       9ee64cc674e4.png">
+  <img width="409" alt="Screenshot 2023-03-07 at 17 22 19" src="https://user-images.githubusercontent.com/56078226/223484170-b96a9404-48f0-4123-a6fc-56908ae9f360.png">
   <img width="388" alt="Screenshot 2023-03-07 at 17 18 07" src="https://user-images.githubusercontent.com/56078226/223483109-7f3c4373-ce56-4d8f-8cbf-0fce3714f0b1.png">
 
 
