@@ -28,7 +28,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  (https://user-images.githubusercontent.com/56078226/223484682-925fb318-9d88-4b5e-93ff-4e28c8c441a0.jpg)
+<img width="828" alt="Screenshot 2023-03-07 at 17 26 52" src="https://user-images.githubusercontent.com/56078226/223485343-f3547748-e8b1-453c-9a75-09914e1a3fe6.png">
+
 
 
 
