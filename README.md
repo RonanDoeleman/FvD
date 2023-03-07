@@ -28,7 +28,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme![IMG_0694](https://user-images.githubusercontent.com/56078226/222753550-90f2caa2-5ac8-46cd-b5b5-1a195204de69.jpg)
+  [IMG_0694](https://user-images.githubusercontent.com/56078226/222753550-90f2caa2-5ac8-46cd-b5b5-1a195204de69.jpg)
 
 
   ### Je ambitie: 
