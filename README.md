@@ -50,8 +50,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img width="409" alt="Screenshot 2023-03-07 at 17 22 19" src="https://user-images.githubusercontent.com/56078226/223484170-b96a9404-48f0-4123-a6fc-56908ae9f360.png">
-  <img width="388" alt="Screenshot 2023-03-07 at 17 18 07" src="https://user-images.githubusercontent.com/56078226/223483109-7f3c4373-ce56-4d8f-8cbf-0fce3714f0b1.png">
+  <img width="388" alt="Screenshot 2023-03-07 at 17 44 26" src="https://user-images.githubusercontent.com/56078226/223490226-f0fd1a1c-1abf-441e-bf3a-36c108cc82c2.png">
+<img width="405" alt="Screenshot 2023-03-07 at 17 44 09" src="https://user-images.githubusercontent.com/56078226/223490258-0a441957-3468-46ee-b960-c4bbe734aebd.png">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
