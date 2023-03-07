@@ -48,13 +48,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img width="381" alt="Screenshot 2023-03-07 at 17 17 37" src="https://user-images.githubusercontent.com/56078226/223483086-2b80dd6d-474d-47bc-96af-       9ee64cc674e4.png">
+  <img width="388" alt="Screenshot 2023-03-07 at 17 18 07" src="https://user-images.githubusercontent.com/56078226/223483109-7f3c4373-ce56-4d8f-8cbf-0fce3714f0b1.png">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img width="1138" alt="Screenshot 2023-03-07 at 17 19 20" src="https://user-images.githubusercontent.com/56078226/223483335-22a452ac-b1e0-4345-8fc8-21c2729a5e16.png">
+
+  Ik heb geleerd hoe je met behulp van ::before en ::after elementen kan aanmaken zonder dat dit in je html komt. Hiermee kan je coole style effecten creë
+  ren.
 
 
   ### Dit was lastig/Is niet gelukt:
