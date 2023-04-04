@@ -45,12 +45,12 @@ nextToeImage();
 
 
 const noseImages = [
-    "images/nose/noseWhite.png",
-    "images/nose/noseBlack.png",
-    "images/nose/noseBlue.png",
-    "images/nose/noseLime.png",
-    "images/nose/noseRed.png",
-    "images/nose/noseGrey.png"
+    "images/nose/NoseWhite.png",
+    "images/nose/NoseBlack.png",
+    "images/nose/NoseBlue.png",
+    "images/nose/NoseLime.png",
+    "images/nose/NoseRed.png",
+    "images/nose/NoseGrey.png"
 ]
 
 let currentNoseIndex = -1;
@@ -70,12 +70,12 @@ function nextNoseImage() {
 nextNoseImage();
 
 const sideImages = [
-    "images/side/sideWhite.png",
-    "images/side/sideBlack.png",
-    "images/side/sideBlue.png",
-    "images/side/sideLime.png",
-    "images/side/sideRed.png",
-    "images/side/sideGrey.png"
+    "images/side/SideWhite.png",
+    "images/side/SideBlack.png",
+    "images/side/SideBlue.png",
+    "images/side/SideLime.png",
+    "images/side/SideRed.png",
+    "images/side/SideGrey.png"
 ]
 
 let currentSideIndex = -1;

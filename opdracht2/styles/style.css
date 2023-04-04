@@ -157,15 +157,17 @@ form{
 }
 
 #myDIV button:nth-of-type(10){
-	background-color: lightblue;
+	background-color: rgb(203, 203, 203);
+	font-weight: 900;
 	border-radius: 8px;
 	border: none;
 	cursor: pointer;
 }
 
 #myDIV button:nth-of-type(10):hover{
-	background-color: rgb(37, 204, 255);
-	transition: 1s;
+	background-color: rgb(143, 212, 255);
+	transition: .8s;
+	color: white;
 }
 
 #myDIV p{
