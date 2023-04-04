@@ -75,15 +75,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+![IMG_1030](https://user-images.githubusercontent.com/56078226/229818346-f28a1b05-b05b-4d91-bdc1-f000afe4ae32.jpg)
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het toepassen en schrijven van complexere javascript functies
+  - Meerdere manieren van interactie mogelijk maken (drag & drop, klikken)
+  
 </details>
 
 
