@@ -1,0 +1,317 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+/* @font-face {
+	font-family: 'Proxima-Nova';
+	src: url('../fonts/fontspring-demo-proximanova-bold-webfont.woff') format('woff2'),
+			 url('../fonts/fontspring-demo-proximanova-bold-webfont.woff2') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima-Nova';
+	src: url('../fonts/fontspring-demo-proximanova-boldit-webfont.woff') format('woff2'),
+			 url('../fonts/fontspring-demo-proximanova-boldit-webfont.woff2') format('woff');
+	font-weight: bold;
+	font-style: italic;
+} */
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button:not[disabled], summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+  font-family: Helvetica, sans-serif, sans-serif;
+  color:var(--color-text);
+  background-color:var(--color-background);
+  padding: 0;
+  margin: 0;
+}
+
+/* jouw code */
+
+.logo{
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	background-color: lightskyblue;
+}
+
+h1{
+	color: white;
+}
+
+.logo img{
+	width: 105px;
+	height: 40px;
+	margin-top: 1em;
+}
+
+.customize-sneaker{
+	padding: 2em;
+}
+
+.product-container{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.size-container{
+	display: flex;
+	align-items: center;
+}
+
+form{
+	margin-bottom: 4em;
+	margin-left: 0;
+}
+
+#sizeList{
+	width: 10em;
+}
+
+#size-button{
+	background-color: rgb(203, 203, 203);
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 900;
+	width: 10em;
+	margin-left: 1em;
+	height: 4em;
+	align-self: center;
+}
+
+#size-button:hover{
+	background-color: rgb(143, 212, 255);
+	color: white;
+	transition: 1s;
+}
+
+#sizeChosen{
+	font-size: 2em;
+	margin-left: 1em;
+	margin-top: 1em;
+	color: rgb(0, 162, 255);
+}
+
+.buttons-container{
+	width: 400px;
+	margin-right: 10%;
+}
+
+#customize-button{
+	background-color: rgb(203, 203, 203);
+	border: none;
+	font-size: 1em;
+	font-weight: 900;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
+	height: 4em;
+}
+
+#customize-button:hover{
+	background-color: rgb(143, 212, 255);
+	color: white;
+	transition: .8s;
+}
+
+#shoe-buttons{
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+#shoe-buttons button{
+	padding: 1em;
+	margin: 1em;
+	cursor: pointer;
+	font-size: 1em;
+	width: 12em;
+	margin-left: 0;
+}
+
+#shoe-buttons button:nth-of-type(10){
+	background-color: rgb(203, 203, 203);
+	font-weight: 900;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+#shoe-buttons button:nth-of-type(10):hover{
+	background-color: rgb(143, 212, 255);
+	transition: .8s;
+	color: white;
+}
+
+#shoe-buttons p{
+	font-size: 2em;
+	color: white;
+}
+
+#toe-shoe,
+#nose-shoe,
+#side-shoe,
+#swoosh-shoe,
+#lace-shoe,
+#upper-shoe,
+#heel-shoe,
+#back-shoe {
+	width: 800px;
+	height: auto;
+	position: absolute;
+	margin-left: -10em;
+	margin-top: -5em;
+}
+
+#sole-shoe{
+	width: 800px;
+	height: auto;
+	margin-left: -10em;
+	margin-top: -5em;
+}
+
+#toe-shoe,
+#swoosh-shoe{
+	animation: part-1 2.5s ease-in-out forwards;
+}
+
+#nose-shoe,
+#upper-shoe,
+#side-shoe{
+	animation: part-2 2.5s ease-in-out forwards;
+}
+
+#heel-shoe,
+#sole-shoe{
+	animation: part-3 2.5s ease-in-out forwards;
+}
+
+#lace-shoe,
+#back-shoe{
+	animation: part-4 2.5s ease-in-out forwards;
+}
+
+
+@keyframes part-1 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes part-2 {
+	0% {
+	  transform: translateY(-200%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@keyframes part-3 {
+	0% {
+	  transform: translateX(200%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+}
+
+@keyframes part-4 {
+	0% {
+	  transform: translateY(200%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+
+	.product-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.buttons-container{
+		margin-right: 0;
+	}
+
+	#toe-shoe,
+	#nose-shoe,
+	#side-shoe,
+	#swoosh-shoe,
+	#lace-shoe,
+	#upper-shoe,
+	#heel-shoe,
+	#back-shoe,
+	#sole-shoe{
+		align-items: center;
+		margin-left: 0;
+		width: 650px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	h1{
+		font-size: 1.5em;
+	}
+
+	.logo img{
+		width: 80px;
+		height: 30px;
+	}
+
+	.buttons-container{
+		margin-right: 0;
+	}
+
+	#toe-shoe,
+	#nose-shoe,
+	#side-shoe,
+	#swoosh-shoe,
+	#lace-shoe,
+	#upper-shoe,
+	#heel-shoe,
+	#back-shoe,
+	#sole-shoe{
+		align-items: center;
+		margin-left: 0;
+		width: 500px;
+		height: auto;
+	}
+
+}
