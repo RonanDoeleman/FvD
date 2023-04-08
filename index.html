@@ -51,13 +51,30 @@
 					<div id="droptargetNose">
 						<img id="nose-shoe" src="./images/nose/NoseWhite.png" alt="Nike Dunk Shoe Nose"/>
 					</div>
+					<div id="droptargetSide">
+						<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
+					</div>
+					<div id="droptargetSwoosh">
+						<img id="swoosh-shoe" src="./images/swoosh/SwooshWhite.png" alt="Nike Dunk Shoe Swoosh"/>
+					</div>
+					<div id="droptargetLace">
+						<img id="lace-shoe" src="./images/lace/LaceWhite.png" alt="Nike Dunk Shoe Lace"/>
+					</div>
+					<div id="droptargetUpper">
+						<img id="upper-shoe" src="./images/upper/UpperWhite.png" alt="Nike Dunk Shoe Upper"/>
+					</div>
+					<div id="droptargetHeel">
+						<img id="heel-shoe" src="./images/heel/HeelWhite.png" alt="Nike Dunk Shoe Heel"/>
+					</div>
+					<div id="droptargetSole">
+						<img id="sole-shoe" src="./images/sole/SoleWhite.png" alt="Nike Dunk Shoe Sole"/>
+					</div>
+					<div id="droptargetBack">
+						<img id="back-shoe" src="./images/back/BackWhite.png" alt="Nike Dunk Shoe Back"/>
+					</div>
 				</div>
-				
+		</div>	
 
-				
-				 <div>
-					<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
-				</div> 
 				<!-- <div id="droptarget">
 					<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
 					<img id="swoosh-shoe" src="./images/swoosh/SwooshWhite.png" alt="Nike Dunk Shoe Swoosh"/>
@@ -81,10 +98,8 @@
 						<button id="heel-button"onclick="nextHeelImage()" type="button">Heel</button>
 						<button id="back-button"onclick="nextBackImage()" type="button">Back</button>
 						<button id="sole-button"onclick="nextSoleImage()" type="button">Sole</button>
-						<button id="save">Save</button>
 					</div>	
 				</div> -->
-		</div>	
 
 				<!-- <button id="menuButtonToe" onclick="openMenuToe()">Toe</button>
 				<button id="menuButtonNose" onclick="openMenuNose()">Nose</button> -->
@@ -101,18 +116,64 @@
 					  <label for="nose">Nose</label>
 					</div>
 				</div> -->
+
 				<div>
 					<div>
 					  <input type="radio" id="toe" name="itemSelect" value="Toe"
-							 checked onclick="openMenu()">
+							onclick="openMenu()">
 					  <label for="toe">Toe</label>
 					</div>
 				
 					<div>
-					  <input type="radio" id="nose" name="itemSelect" value="Nose" onclick="openMenu()">
+					  <input type="radio" id="nose" name="itemSelect" value="Nose" 
+					  		onclick="openMenu()">
 					  <label for="">Nose</label>
 					</div>
+					
+					<div>
+						<input type="radio" id="side" name="itemSelect" value="Side" 
+								onclick="openMenu()">
+						<label for="">Side</label>
+					</div>
+
+					<div>
+					  <input type="radio" id="swoosh" name="itemSelect" value="Swoosh" 
+					  		onclick="openMenu()">
+					  <label for="">Swoosh</label>
+					</div>
+
+					<div>
+						<input type="radio" id="lace" name="itemSelect" value="Lace" 
+								onclick="openMenu()">
+						<label for="">Lace</label>
+					</div>
+
+					<div>
+						<input type="radio" id="upper" name="itemSelect" value="Upper" 
+								onclick="openMenu()">
+						<label for="">Upper</label>
+					</div>
+
+					<div>
+						<input type="radio" id="heel" name="itemSelect" value="Heel" 
+								onclick="openMenu()">
+						<label for="">Heel</label>
+					</div>
+
+					<div>
+						<input type="radio" id="sole" name="itemSelect" value="Sole" 
+								onclick="openMenuSole()">
+						<label for="">Sole</label>
+					</div>
+
+					<div>
+						<input type="radio" id="back" name="itemSelect" value="Back" 
+								onclick="openMenu()">
+						<label for="">Back</label>
+					</div>
 				</div>
+					
+
 				
 
 				<!-- <div id="toeColors">
@@ -141,10 +202,16 @@
 					<button id="dragRed" draggable="true" value="red">red</button>
 					<button id="dragGrey" draggable="true" value="grey">grey</button>
 				</div>
+
+				<div id="colors-sole">
+					<button id="dragWhite" draggable="true" value="white">white</button>
+					<button id="dragBlack" draggable="true" value="black">black</button>
+					<button id="dragGrey" draggable="true" value="grey">grey</button>
+				</div>
 	</div>
 	
 
-	<script defer src="scripts/script.js"></script>
+	<script src="scripts/script.js"></script>
 
 	
 </body>

@@ -270,11 +270,22 @@ function openMenu() {
     }
 }
 
+function openMenuSole() {
+    var x = document.getElementById("colors-sole");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+}
+
 const radioButtons = document.getElementsByName("itemSelect");
 
 radioButtons.forEach(radio => {
     return radio.addEventListener("click", (event) => {
+        
         const activeElement = document.getElementById(`droptarget${event.target.value}`);
+
         if(activeElement){
             activeElement.style.zIndex = "99";
             activeElement.draggable = true;

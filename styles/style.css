@@ -182,27 +182,6 @@ img{
 	color: white;
 }
 
-#toe-shoe,
-#nose-shoe,
-#side-shoe,
-#swoosh-shoe,
-#lace-shoe,
-#upper-shoe,
-#heel-shoe,
-#back-shoe {
-	width: 800px;
-	height: auto;
-	position: absolute;
-	margin-top: -5em;
-	margin-left: 30em;
-}
-
-#sole-shoe{
-	width: 800px;
-	height: auto;
-	margin-top: -5em;
-}
-
 /* #toe-shoe,
 #swoosh-shoe{
 	animation: part-1 2.5s ease-in-out forwards;
@@ -321,6 +300,27 @@ img{
 
 } */
 
+#colors,
+#colors-sole{
+	display: none;
+}
+
+#toe-shoe,
+#nose-shoe,
+#side-shoe,
+#swoosh-shoe,
+#lace-shoe,
+#upper-shoe,
+#heel-shoe,
+#back-shoe,
+#sole-shoe {
+	width: 800px;
+	height: auto;
+	position: absolute;
+	margin-top: -5em;
+	margin-left: 30em;
+}
+
 button {
 	inline-size:4em;
 	aspect-ratio: 1;
@@ -425,4 +425,176 @@ button[value="grey"] {
 #droptargetNose[data-color="grey"] img {
 	content: url("../images/nose/NoseGrey.png");
 }
+
+/* Set Side Images */
+
+#droptargetSide[data-color="white"] img {
+	content: url("../images/side/SideWhite.png");
+}
+
+#droptargetSide[data-color="black"] img {
+	content: url("../images/side/SideBlack.png");
+}
+
+#droptargetSide[data-color="blue"] img {
+	content: url("../images/side/SideBlue.png");
+}
+
+#droptargetSide[data-color="lime"] img {
+	content: url("../images/side/SideLime.png");
+}
+
+#droptargetSide[data-color="red"] img {
+	content: url("../images/side/SideRed.png");
+}
+
+#droptargetSide[data-color="grey"] img {
+	content: url("../images/side/SideGrey.png");
+}
+
+/* Set Swoosh Images */
+
+#droptargetSwoosh[data-color="white"] img {
+	content: url("../images/swoosh/SwooshWhite.png");
+}
+
+#droptargetSwoosh[data-color="black"] img {
+	content: url("../images/swoosh/SwooshBlack.png");
+}
+
+#droptargetSwoosh[data-color="blue"] img {
+	content: url("../images/swoosh/SwooshBlue.png");
+}
+
+#droptargetSwoosh[data-color="lime"] img {
+	content: url("../images/swoosh/SwooshLime.png");
+}
+
+#droptargetSwoosh[data-color="red"] img {
+	content: url("../images/swoosh/SwooshRed.png");
+}
+
+#droptargetSwoosh[data-color="grey"] img {
+	content: url("../images/swoosh/SwooshGrey.png");
+}
+
+/* Set Lace Images */
+
+#droptargetLace[data-color="white"] img {
+	content: url("../images/lace/LaceWhite.png");
+}
+
+#droptargetLace[data-color="black"] img {
+	content: url("../images/lace/LaceBlack.png");
+}
+
+#droptargetLace[data-color="blue"] img {
+	content: url("../images/lace/LaceBlue.png");
+}
+
+#droptargetLace[data-color="lime"] img {
+	content: url("../images/lace/LaceLime.png");
+}
+
+#droptargetLace[data-color="red"] img {
+	content: url("../images/lace/LaceRed.png");
+}
+
+#droptargetLace[data-color="grey"] img {
+	content: url("../images/lace/LaceGrey.png");
+}
+
+/* Set Upper Images */
+
+#droptargetUpper[data-color="white"] img {
+	content: url("../images/upper/UpperWhite.png");
+}
+
+#droptargetUpper[data-color="black"] img {
+	content: url("../images/upper/UpperBlack.png");
+}
+
+#droptargetUpper[data-color="blue"] img {
+	content: url("../images/upper/UpperBlue.png");
+}
+
+#droptargetUpper[data-color="lime"] img {
+	content: url("../images/upper/UpperLime.png");
+}
+
+#droptargetUpper[data-color="red"] img {
+	content: url("../images/upper/UpperRed.png");
+}
+
+#droptargetUpper[data-color="grey"] img {
+	content: url("../images/upper/UpperGrey.png");
+}
+
+/* Set Heel Images */
+
+#droptargetHeel[data-color="white"] img {
+	content: url("../images/heel/HeelWhite.png");
+}
+
+#droptargetHeel[data-color="black"] img {
+	content: url("../images/heel/HeelBlack.png");
+}
+
+#droptargetHeel[data-color="blue"] img {
+	content: url("../images/heel/HeelBlue.png");
+}
+
+#droptargetHeel[data-color="lime"] img {
+	content: url("../images/heel/HeelLime.png");
+}
+
+#droptargetHeel[data-color="red"] img {
+	content: url("../images/heel/HeelRed.png");
+}
+
+#droptargetHeel[data-color="grey"] img {
+	content: url("../images/heel/HeelGrey.png");
+}
+
+/* Set Back Images */
+
+#droptargetBack[data-color="white"] img {
+	content: url("../images/back/BackWhite.png");
+}
+
+#droptargetBack[data-color="black"] img {
+	content: url("../images/back/BackBlack.png");
+}
+
+#droptargetBack[data-color="blue"] img {
+	content: url("../images/back/BackBlue.png");
+}
+
+#droptargetBack[data-color="lime"] img {
+	content: url("../images/back/BackLime.png");
+}
+
+#droptargetBack[data-color="red"] img {
+	content: url("../images/back/BackRed.png");
+}
+
+#droptargetBack[data-color="grey"] img {
+	content: url("../images/back/BackGrey.png");
+}
+
+/* Set Sole Images */
+
+#droptargeSole[data-color="white"] img {
+	content: url("../images/sole/SoleWhite.png");
+}
+
+#droptargeSole[data-color="black"] img {
+	content: url("../images/sole/SoleBlack.png");
+}
+
+#droptargeSole[data-color="blue"] img {
+	content: url("../images/sole/SoleGrey.png");
+}
+
+
 
