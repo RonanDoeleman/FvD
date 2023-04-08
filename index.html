@@ -42,50 +42,23 @@
 		
 		</form>
 
-		<!-- <form>
-			<div class="size-container">
-				<div class="size-button">
-					<input type="radio" id="39" name="size-picker" onclick="myFunction(this.value)" value="39">
-						<label for="39">39</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="40" name="size-picker" onclick="myFunction(this.value)" value="40">
-						<label for="40">40</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="41" name="size-picker" onclick="myFunction(this.value)" value="41">
-						<label for="41">41</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="42" name="size-picker" onclick="myFunction(this.value)" value="42">
-						<label for="42">42</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="43" name="size-picker" onclick="myFunction(this.value)" value="43">
-						<label for="43">43</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="44" name="size-picker" onclick="myFunction(this.value)" value="44">
-						<label for="44">44</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="45" name="size-picker" onclick="myFunction(this.value)" value="45">
-						<label for="45">45</label>
-				</div>
-				<div class="size-button">
-					<input type="radio" id="46" name="size-picker" onclick="myFunction(this.value)" value="46">
-						<label for="46">46</label>
-				</div>	
-
-						  <input type="submit" value="Choose Size">
-			</div>
-	</form> -->
-
 		<div class="product-container">
 
-				<div id="shoe">
-					<img id="toe-shoe" src="./images/toe/ToeWhite.png" alt="Nike Dunk Shoe Toe"/>
-					<img id="nose-shoe" src="./images/nose/NoseWhite.png" alt="Nike Dunk Shoe Nose"/>
+				<div>
+					<div id="droptargetToe">
+						<img id="toe-shoe" src="./images/toe/ToeWhite.png" alt="Nike Dunk Shoe Toe"/>
+					</div>
+					<div id="droptargetNose">
+						<img id="nose-shoe" src="./images/nose/NoseWhite.png" alt="Nike Dunk Shoe Nose"/>
+					</div>
+				</div>
+				
+
+				
+				 <div>
+					<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
+				</div> 
+				<!-- <div id="droptarget">
 					<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
 					<img id="swoosh-shoe" src="./images/swoosh/SwooshWhite.png" alt="Nike Dunk Shoe Swoosh"/>
 					<img id="lace-shoe" src="./images/lace/LaceWhite.png" alt="Nike Dunk Shoe Lace"/>
@@ -93,9 +66,9 @@
 					<img id="heel-shoe" src="./images/heel/HeelWhite.png" alt="Nike Dunk Shoe Heel"/>
 					<img id="back-shoe" src="./images/back/BackWhite.png" alt="Nike Dunk Shoe Back"/>
 					<img id="sole-shoe" src="./images/sole/SoleWhite.png" alt="Nike Dunk Shoe Sole"/>					
-				</div>
+				</div> -->
 
-				<div class="buttons-container">
+				<!-- <div class="buttons-container">
 					<button id="customize-button" onclick="openMenu()">Start Customizing!</button>
 				
 					<div id="shoe-buttons">
@@ -110,18 +83,64 @@
 						<button id="sole-button"onclick="nextSoleImage()" type="button">Sole</button>
 						<button id="save">Save</button>
 					</div>	
-				</div>
+				</div> -->
 		</div>	
 
-		<!-- <div>
-			<img src="images/sole/SoleBlack.png" id="color" ondragstart="dragStartHandler(event);" draggable="true">
-			</img>
-		</div>
-		<div id="target"
-      			ondrop="dropHandler(event);"
-     			 ondragover="dragOverHandler(event);">
-     			 Drop Zone
-		</div> -->
+				<!-- <button id="menuButtonToe" onclick="openMenuToe()">Toe</button>
+				<button id="menuButtonNose" onclick="openMenuNose()">Nose</button> -->
+		
+				<!-- <div>
+					<div>
+					  <input type="radio" id="toe" name="itemSelect" value="Toe"
+							 checked onclick="openMenuToe()">
+					  <label for="toe">Toe</label>
+					</div>
+				
+					<div>
+					  <input type="radio" id="nose" name="itemSelect" value="Nose" onclick="openMenuNose()">
+					  <label for="nose">Nose</label>
+					</div>
+				</div> -->
+				<div>
+					<div>
+					  <input type="radio" id="toe" name="itemSelect" value="Toe"
+							 checked onclick="openMenu()">
+					  <label for="toe">Toe</label>
+					</div>
+				
+					<div>
+					  <input type="radio" id="nose" name="itemSelect" value="Nose" onclick="openMenu()">
+					  <label for="">Nose</label>
+					</div>
+				</div>
+				
+
+				<!-- <div id="toeColors">
+					<button id="dragWhiteToe" draggable="true" value="white">white</button>
+					<button id="dragBlackToe" draggable="true" value="black">black</button>
+					<button id="dragBlueToe" draggable="true" value="blue">blue</button>
+					<button id="dragLimeToe" draggable="true" value="lime">lime</button>
+					<button id="dragRedToe" draggable="true" value="red">red</button>
+					<button id="dragGreyToe" draggable="true" value="grey">grey</button>
+				</div>
+
+				<div id="noseColors">
+					<button id="dragWhiteNose" draggable="true" value="white">white</button>
+					<button id="dragBlackNose" draggable="true" value="black">black</button>
+					<button id="dragBlueNose" draggable="true" value="blue">blue</button>
+					<button id="dragLimeNose" draggable="true" value="lime">lime</button>
+					<button id="dragRedNose" draggable="true" value="red">red</button>
+					<button id="dragGreyNose" draggable="true" value="grey">grey</button>
+				</div> -->
+
+				<div id="colors">
+					<button id="dragWhite" draggable="true" value="white">white</button>
+					<button id="dragBlack" draggable="true" value="black">black</button>
+					<button id="dragBlue" draggable="true" value="blue">blue</button>
+					<button id="dragLime" draggable="true" value="lime">lime</button>
+					<button id="dragRed" draggable="true" value="red">red</button>
+					<button id="dragGrey" draggable="true" value="grey">grey</button>
+				</div>
 	</div>
 	
 

@@ -76,7 +76,8 @@ h1{
 
 .product-container{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+
 }
 
 .size-container{
@@ -91,6 +92,11 @@ form{
 
 #sizeList{
 	width: 10em;
+}
+
+img{
+	width: 500px;
+	height: auto;
 }
 
 #size-button{
@@ -187,18 +193,17 @@ form{
 	width: 800px;
 	height: auto;
 	position: absolute;
-	margin-left: -10em;
 	margin-top: -5em;
+	margin-left: 30em;
 }
 
 #sole-shoe{
 	width: 800px;
 	height: auto;
-	margin-left: -10em;
 	margin-top: -5em;
 }
 
-#toe-shoe,
+/* #toe-shoe,
 #swoosh-shoe{
 	animation: part-1 2.5s ease-in-out forwards;
 }
@@ -217,10 +222,10 @@ form{
 #lace-shoe,
 #back-shoe{
 	animation: part-4 2.5s ease-in-out forwards;
-}
+} */
 
 
-@keyframes part-1 {
+/* @keyframes part-1 {
   0% {
     transform: translateX(-200%);
   }
@@ -254,9 +259,9 @@ form{
 	100% {
 	  transform: translateY(0);
 	}
-}
+} */
 
-@media only screen and (max-width: 1050px) {
+/* @media only screen and (max-width: 1050px) {
 
 	.product-container{
 		display: flex;
@@ -314,4 +319,110 @@ form{
 		height: auto;
 	}
 
+} */
+
+button {
+	inline-size:4em;
+	aspect-ratio: 1;
+	appearance:none;
+	border-radius:50%;
+	border:none;
+	font-size:1em;
+	cursor: pointer;
 }
+
+button[value="white"] {
+	background-color:white;
+}
+
+button[value="black"] {
+	background-color:rgb(15, 15, 15);
+	color: white;
+}
+
+button[value="blue"] {
+	background-color:blue;
+}
+
+button[value="lime"] {
+	background-color: #A4D4BA;
+}
+
+button[value="red"] {
+	background-color:red;
+}
+
+button[value="grey"] {
+	background-color: #6F7478;
+}
+
+#toeColors,
+#noseColors{
+	display: none;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+/* #droptargetToe,
+#droptargetNose {
+	inline-size:8em;
+} */
+
+/* #droptargetToe img,
+#droptargetNose img {
+	height: 700px;
+	width: auto;
+} */
+
+/* Set Toe Images */
+
+#droptargetToe[data-color="white"] img {
+	content: url("../images/toe/ToeWhite.png");
+}
+
+#droptargetToe[data-color="black"] img {
+	content: url("../images/toe/ToeBlack.png");
+}
+
+#droptargetToe[data-color="blue"] img {
+	content: url("../images/toe/ToeBlue.png");
+}
+
+#droptargetToe[data-color="lime"] img {
+	content: url("../images/toe/ToeLime.png");
+}
+
+#droptargetToe[data-color="red"] img {
+	content: url("../images/toe/ToeRed.png");
+}
+
+#droptargetToe[data-color="grey"] img {
+	content: url("../images/toe/ToeGrey.png");
+}
+
+/* Set Nose Images */
+
+#droptargetNose[data-color="white"] img {
+	content: url("../images/nose/NoseWhite.png");
+}
+
+#droptargetNose[data-color="black"] img {
+	content: url("../images/nose/NoseBlack.png");
+}
+
+#droptargetNose[data-color="blue"] img {
+	content: url("../images/nose/NoseBlue.png");
+}
+
+#droptargetNose[data-color="lime"] img {
+	content: url("../images/nose/NoseLime.png");
+}
+
+#droptargetNose[data-color="red"] img {
+	content: url("../images/nose/NoseRed.png");
+}
+
+#droptargetNose[data-color="grey"] img {
+	content: url("../images/nose/NoseGrey.png");
+}
+
