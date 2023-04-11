@@ -179,9 +179,10 @@ Code:
 
   ### Dit ging goed/Heb ik geleerd: 
   Wat voor mijn gevoel goed ging was het toepassen van de functionaliteiten. Zelf had ik al snel door hoe je door een array van images het bijbehorende deel van de schoen kon aanpassen. Dit vergde wel veel tijd aangezien ik elk onderdeel met photoshop moest uitsnijden in 6 verschillende kleuren. Bij elkaar wel 65 plaatjes :). De drag and drop functie vondt ik allereerst ook lastig. Gelukkig wist ik wat er fout ging alleen een oplossing bedenken was een ander ding. Gelukkig nadat Sanne mij geholpen had met de drag & drop functie ging het eigenlijk voorspoedig. 
+  
 <img width="690" alt="Screenshot 2023-04-11 at 20 53 07" src="https://user-images.githubusercontent.com/56078226/231267155-885cce13-7f22-4e6d-9f04-e76386710d52.png">
 
   ### Dit was lastig/Is niet gelukt:
-  Wat lastig was vond ik het opslaan van de schoen in de localstorage. Dit is uiteindelijk ook niet gelukt helaas. Maar omdat wij developers moeten denken in oplossingen en niet in problemen, heb ik een andere manier gevonden hoe de gebruiker zijn/haar creatie kan opslaan. Namelijk met een screenshot.
+  Wat lastig was vond ik het opslaan van de schoen in de localstorage. Dit is uiteindelijk ook niet gelukt helaas. Maar omdat wij developers niet moeten denken in problemen maar in oplossingen, heb ik een andere manier gevonden hoe de gebruiker zijn/haar creatie kan opslaan. Namelijk met een screenshot.
 
 <img width="1434" alt="Screenshot 2023-04-11 at 21 16 00" src="https://user-images.githubusercontent.com/56078226/231266131-6dbf4b01-2a92-4c46-97b5-515d13407bb6.png">
