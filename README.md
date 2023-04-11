@@ -82,6 +82,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Aan deze technieken/punten wil ik werken:
   - Het toepassen en schrijven van complexere javascript functies
   - Meerdere manieren van interactie mogelijk maken (drag & drop, klikken)
+  - Opslaan van de schoen en deze later terugvinden
   
 </details>
 
@@ -94,27 +95,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Neem minimaal 5 bevindingen op:
 
-
-
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het uitvouwen van een menu voor de kleuren.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Dit probleem heb ik opgelost door een javascript functie toe te voegen als je op de button klikt voor elk onderdeel van de schoen zodat je de kleuren te zien krijgt.
 
+Oud:
+<img width="364" alt="Screenshot 2023-04-11 at 20 46 21" src="https://user-images.githubusercontent.com/56078226/231259961-1775b597-b0fd-402d-87e1-174c5c7e6e44.png">
 
+Nieuw:
+![Screenshot 2023-04-11 at 20 46 39](https://user-images.githubusercontent.com/56078226/231260015-381f35e4-b379-41aa-a892-5d9c36a757f9.png)
+
+Code: 
+<img width="457" alt="Screenshot 2023-04-11 at 20 45 36" src="https://user-images.githubusercontent.com/56078226/231260156-b850aa2c-92df-4208-af9e-c3ad748d8aa2.png">
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het Drag & Drop systeem
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Bij deze heeft meneer Sanne 't Hooft hooft mij geholpen. Ik liep namelijk vast met de bijbehorende dropzone te selecteren als je een kleur veranderde. Dit kwam omdat de images als het ware bovenop elkaar stonden. Allereerst probeerde ik via radio buttons de geselecteerde image naar boven te plaatsen. Dit lukte echter niet. Met de nieuwe code kon ik de bijbehorende img selecteren die hoorde bij de fieldset button.
 
+<img width="590" alt="Screenshot 2023-04-11 at 20 53 07" src="https://user-images.githubusercontent.com/56078226/231261321-eb026033-db14-4339-8829-413b1c082fdf.png">
 
+Code:
+<img width="577" alt="Screenshot 2023-04-11 at 20 52 14" src="https://user-images.githubusercontent.com/56078226/231261360-93d23a1b-0a68-4d9a-a0ce-dca012e20d4e.png">
 
   ### Bevinding 3:
-  ...
-</details>
+  Huidige selectie opslaan
+
+  #### oplossing:
+  Bij deze functionaliteit had ik als eerste het plan om de schoen op te slaan in de local storage. Hiermee zou de gebruiker dan via een save-button de huidige creatie kunnen opslaan en opnieuw aanklikken als de gebruiker terug wou naar de opgeslagen selectie. Hier kwam ik echter niet uit dus heb ik een button gemaakt waarmee je een screenshot kan maken van de huidige selectie. Deze screenshot krijg je vervolgens op het scherm te zien en kan je opslaan in je eigen afbeeldingen op je computer.
+  
+<img width="568" alt="Screenshot 2023-04-11 at 20 59 21" src="https://user-images.githubusercontent.com/56078226/231262798-3454e6cf-527e-4b69-b8bf-6ed4738b9405.png">
+
+<img width="568" alt="Screenshot 2023-04-11 at 20 59 31" src="https://user-images.githubusercontent.com/56078226/231262810-00cfe1e0-0af1-4b7d-aa71-c3f0d19ab507.png">
+
 
 
 
