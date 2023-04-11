@@ -1,0 +1,678 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+
+@font-face {
+	font-family: 'Proxima-Nova';
+	src: url('../fonts/fontspring-demo-proximanova-bold-webfont.woff') format('woff2'),
+			 url('../fonts/fontspring-demo-proximanova-bold-webfont.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima-Nova';
+	src: url('../fonts/fontspring-demo-proximanova-boldit-webfont.woff') format('woff2'),
+			 url('../fonts/fontspring-demo-proximanova-boldit-webfont.woff2') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Light mode */
+:root {
+	--color-text:#000000;
+	--color-background:#eee;
+	--color-background-btn: rgb(203, 203, 203);
+	--color-background-btn-hover: rgb(143, 212, 255);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text: rgb(26, 26, 26);
+		--color-text-h2: rgb(255, 255, 255);
+		--color-background:rgb(48, 48, 48);
+	}
+}
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button:not[disabled], summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+  font-family: 'Proxima-Nova', sans-serif, sans-serif;
+  color:var(--color-text);
+  background-color:var(--color-background);
+  padding: 0;
+  margin: 0;
+}
+
+/* jouw code */
+
+.logo{
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	background-color: lightskyblue;
+}
+
+h1 {
+	color: var(--color-text);
+}
+
+h2{
+	color: var(--color-text-h2);
+}
+
+.logo img{
+	width: 105px;
+	height: 40px;
+	margin-top: 1em;
+}
+
+.customize-sneaker{
+	padding: 2em;
+}
+
+.product-container{
+	display: flex;
+	justify-content: center;
+}
+
+.size-container{
+	display: flex;
+	align-items: center;
+}
+
+#sizeList{
+	width: 10em;
+}
+
+img{
+	width: 500px;
+	height: auto;
+}
+
+#size-button{
+	background-color: var(--color-background-btn);
+	border-radius: 5%;
+	border: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 900;
+	width: 10em;
+	margin-left: 1em;
+	height: 4em;
+	align-self: center;
+	font-family: 'Proxima-Nova'
+}
+
+#size-button:hover{
+	background-color: var(--color-background-btn-hover);
+	color: white;
+	transition: 1s;
+}
+
+#sizeChosen{
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 1em;
+	margin-top: 1em;
+	color: rgb(0, 162, 255);
+}
+
+fieldset button {
+	inline-size:4.5em;
+	aspect-ratio: 1;
+	appearance:none;
+	border-radius:50%;
+	border:none;
+	font-size:1em;
+	cursor: grab;
+	margin: .5em;
+}
+
+#toggle-menu-button{
+	border: 2px solid rgb(203, 203, 203);
+	inline-size: 0em;
+	font-weight: 700;
+	border-radius: 5%;
+	font-size: 1.1em;
+	text-align: center;
+	cursor: pointer;
+	height: 5em;
+	width: 10em;
+	margin: 2em 1em 2em 0em;
+	font-family: 'Proxima-Nova'
+}
+
+#toggle-menu-button:hover{
+	background-color: var(--color-background-btn-hover);
+	color: white;
+	transition: 1s;
+}
+
+#toggle-menu-button:focus{
+	background-color: var(--color-background-btn-hover);
+	color: white;
+	transition: .7s;
+}
+
+button[value="white"] {
+	background-color:white;
+	font-family: 'Proxima-Nova'
+}
+
+button[value="black"] {
+	background-color:rgb(15, 15, 15);
+	color: white;
+	font-family: 'Proxima-Nova'
+}
+
+button[value="blue"] {
+	background-color:blue;
+	color: white;
+	font-family: 'Proxima-Nova'
+}
+
+button[value="lime"] {
+	background-color: #A4D4BA;
+	font-family: 'Proxima-Nova'
+}
+
+button[value="red"] {
+	background-color:red;
+	font-family: 'Proxima-Nova'
+}
+
+button[value="grey"] {
+	background-color: #6F7478;
+	color: white;
+	font-family: 'Proxima-Nova'
+}
+
+button[aria-pressed="true"] {
+	box-shadow:inset 0 0 0 .3em rgb(179, 179, 179);
+}
+
+form{
+	max-width: 650px;
+}
+
+.shoe-customizer{
+	margin-top: 6em;
+}
+
+fieldset{
+	border: none;
+}
+
+legend{
+	font-size: 1.5em;
+	font-weight: 900;
+	color: var(--color-text-h2);
+}
+
+.shoe-container {
+	display:grid;
+	place-items:start center;
+}
+
+.shoe-container img{
+	display: block;
+	width: 750px;
+	height: auto;
+	aspect-ratio: 1/1;
+	grid-area:1 /1;
+	pointer-events: none;
+	user-select: none;
+}
+
+.shoe-container img.drop-target {
+	pointer-events:all;
+}
+
+.src-btn, .screenshot {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+#src-btn, .screenshot {
+	position: fixed;
+}
+
+#src-btn {
+	bottom: 1em;
+	right: 1em;
+	border: none;
+	font-weight: 900;
+	cursor: pointer;
+	font-size: 1em;
+	padding: 1em 2.5em;
+	border-radius: 5%;
+	background-color: var(--color-background-btn);
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	font-family: 'Proxima-Nova'
+}
+
+#src-btn img{
+	height: 25px;
+	width: auto;
+}
+
+#src-btn:hover{
+	background-color: var(--color-background-btn-hover);
+	color: white;
+	transition: 1s;
+}
+
+.src-preview {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	background: rgba(0,0,0,0.65);
+	transition: all 0.15s ease;
+  }
+
+.src-preview.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+  
+.src-preview .screenshot {
+	width: 70%;
+	top: 50%;
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 0.15s ease;
+	transform: translate(-50%, -50%) scale(0.9);
+}
+  
+.src-preview.show .screenshot{
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(-50%, -50%) scale(1);
+}
+  
+.screenshot #close-btn {
+	position: absolute;
+	right: -25px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2em;
+}
+  
+.screenshot img {
+	width: 100%;
+}
+
+/* Set Toe Images */
+
+.shoe-container img#toe-shoe[data-color="white"] {
+	content: url("../images/toe/ToeWhite.png");
+}
+
+.shoe-container img#toe-shoe[data-color="black"] {
+	content: url("../images/toe/ToeBlack.png");
+}
+
+.shoe-container img#toe-shoe[data-color="blue"] {
+	content: url("../images/toe/ToeBlue.png");
+}
+
+.shoe-container img#toe-shoe[data-color="lime"] {
+	content: url("../images/toe/ToeLime.png");
+}
+
+.shoe-container img#toe-shoe[data-color="red"] {
+	content: url("../images/toe/ToeRed.png");
+}
+
+.shoe-container img#toe-shoe[data-color="grey"] {
+	content: url("../images/toe/ToeGrey.png");
+}
+
+/* Set Nose Images */
+
+.shoe-container img#nose-shoe[data-color="white"] {
+	content: url("../images/nose/NoseWhite.png");
+}
+
+.shoe-container img#nose-shoe[data-color="black"] {
+	content: url("../images/nose/NoseBlack.png");
+}
+
+.shoe-container img#nose-shoe[data-color="blue"] {
+	content: url("../images/nose/NoseBlue.png");
+}
+
+.shoe-container img#nose-shoe[data-color="lime"] {
+	content: url("../images/nose/NoseLime.png");
+}
+
+.shoe-container img#nose-shoe[data-color="red"] {
+	content: url("../images/nose/NoseRed.png");
+}
+
+.shoe-container img#nose-shoe[data-color="grey"] {
+	content: url("../images/nose/NoseGrey.png");
+}
+
+/* Set Side Images */
+
+.shoe-container img#side-shoe[data-color="white"] {
+	content: url("../images/side/SideWhite.png");
+}
+
+.shoe-container img#side-shoe[data-color="black"] {
+	content: url("../images/side/SideBlack.png");
+}
+
+.shoe-container img#side-shoe[data-color="blue"] {
+	content: url("../images/side/SideBlue.png");
+}
+
+.shoe-container img#side-shoe[data-color="lime"] {
+	content: url("../images/side/SideLime.png");
+}
+
+.shoe-container img#side-shoe[data-color="red"] {
+	content: url("../images/side/SideRed.png");
+}
+
+.shoe-container img#side-shoe[data-color="grey"] {
+	content: url("../images/side/SideGrey.png");
+}
+
+/* Set Swoosh Images */
+
+.shoe-container img#swoosh-shoe[data-color="white"] {
+	content: url("../images/swoosh/SwooshWhite.png");
+}
+
+.shoe-container img#swoosh-shoe[data-color="black"] {
+	content: url("../images/swoosh/SwooshBlack.png");
+}
+
+.shoe-container img#swoosh-shoe[data-color="blue"] {
+	content: url("../images/swoosh/SwooshBlue.png");
+}
+
+.shoe-container img#swoosh-shoe[data-color="lime"] {
+	content: url("../images/swoosh/SwooshLime.png");
+}
+
+.shoe-container img#swoosh-shoe[data-color="red"] {
+	content: url("../images/swoosh/SwooshRed.png");
+}
+
+.shoe-container img#swoosh-shoe[data-color="grey"] {
+	content: url("../images/swoosh/SwooshGrey.png");
+}
+
+/* Set Lace Images */
+
+.shoe-container img#lace-shoe[data-color="white"] {
+	content: url("../images/lace/LaceWhite.png");
+}
+
+.shoe-container img#lace-shoe[data-color="black"] {
+	content: url("../images/lace/LaceBlack.png");
+}
+
+.shoe-container img#lace-shoe[data-color="blue"] {
+	content: url("../images/lace/LaceBlue.png");
+}
+
+.shoe-container img#lace-shoe[data-color="lime"] {
+	content: url("../images/lace/LaceLime.png");
+}
+
+.shoe-container img#lace-shoe[data-color="red"] {
+	content: url("../images/lace/LaceRed.png");
+}
+
+.shoe-container img#lace-shoe[data-color="grey"] {
+	content: url("../images/lace/LaceGrey.png");
+}
+
+/* Set Upper Images */
+
+.shoe-container img#upper-shoe[data-color="white"] {
+	content: url("../images/upper/UpperWhite.png");
+}
+
+.shoe-container img#upper-shoe[data-color="black"] {
+	content: url("../images/upper/UpperBlack.png");
+}
+
+.shoe-container img#upper-shoe[data-color="blue"] {
+	content: url("../images/upper/UpperBlue.png");
+}
+
+.shoe-container img#upper-shoe[data-color="lime"] {
+	content: url("../images/upper/UpperLime.png");
+}
+
+.shoe-container img#upper-shoe[data-color="red"] {
+	content: url("../images/upper/UpperRed.png");
+}
+
+.shoe-container img#upper-shoe[data-color="grey"] {
+	content: url("../images/upper/UpperGrey.png");
+}
+
+/* Set Heel Images */
+
+.shoe-container img#heel-shoe[data-color="white"] {
+	content: url("../images/heel/HeelWhite.png");
+}
+
+.shoe-container img#heel-shoe[data-color="black"] {
+	content: url("../images/heel/HeelBlack.png");
+}
+
+.shoe-container img#heel-shoe[data-color="blue"] {
+	content: url("../images/heel/HeelBlue.png");
+}
+
+.shoe-container img#heel-shoe[data-color="lime"] {
+	content: url("../images/heel/HeelLime.png");
+}
+
+.shoe-container img#heel-shoe[data-color="red"] {
+	content: url("../images/heel/HeelRed.png");
+}
+
+.shoe-container img#heel-shoe[data-color="grey"] {
+	content: url("../images/heel/HeelGrey.png");
+}
+
+/* Set Back Images */
+
+.shoe-container img#back-shoe[data-color="white"] {
+	content: url("../images/back/BackWhite.png");
+}
+
+.shoe-container img#back-shoe[data-color="black"] {
+	content: url("../images/back/BackBlack.png");
+}
+
+.shoe-container img#back-shoe[data-color="blue"] {
+	content: url("../images/back/BackBlue.png");
+}
+
+.shoe-container img#back-shoe[data-color="lime"] {
+	content: url("../images/back/BackLime.png");
+}
+
+.shoe-container img#back-shoe[data-color="red"] {
+	content: url("../images/back/BackRed.png");
+}
+
+.shoe-container img#back-shoe[data-color="grey"] {
+	content: url("../images/back/BackGrey.png");
+}
+
+/* Set Sole Images */
+
+.shoe-container img#sole-shoe[data-color="white"] {
+	content: url("../images/sole/SoleWhite.png");
+}
+
+.shoe-container img#sole-shoe[data-color="black"] {
+	content: url("../images/sole/SoleBlack.png");
+}
+
+.shoe-container img#sole-shoe[data-color="grey"] {
+	content: url("../images/sole/SoleGrey.png");
+}
+
+#toe-shoe,
+#swoosh-shoe{
+	animation: part-1 2.5s ease-in-out forwards;
+}
+
+#nose-shoe,
+#upper-shoe,
+#side-shoe{
+	animation: part-2 2.5s ease-in-out forwards;
+}
+
+#heel-shoe,
+#sole-shoe{
+	animation: part-3 2.5s ease-in-out forwards;
+}
+
+#lace-shoe,
+#back-shoe{
+	animation: part-4 2.5s ease-in-out forwards;
+} 
+
+
+@keyframes part-1 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes part-2 {
+	0% {
+	  transform: translateY(-200%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@keyframes part-3 {
+	0% {
+	  transform: translateX(200%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+}
+
+@keyframes part-4 {
+	0% {
+	  transform: translateY(200%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 1180px) {
+
+	.product-container{
+		display: block;
+	}
+
+	.shoe-container{
+		justify-content: center;
+	}
+
+	.shoe-container img{
+		width: 650px;
+		height: auto;
+		margin-bottom: -5em;
+		margin-top: -5em;
+	}
+
+	.shoe-customizer{
+		margin-top: 0;
+		justify-content: center;
+	}
+
+	form{
+		max-width: 900px;
+	}
+	
+}
+
+@media screen and (max-width: 550px) {
+
+	.logo{
+		gap: .5em;
+	}
+
+	.logo img{
+		align-self: center;
+		margin-left: 1em;
+		margin-top: 0;
+	}
+
+	h1{
+		font-size: 1.5em;
+	}
+
+	.shoe-container img{
+		width: 500px;
+		height: auto;
+	}
+
+	#toggle-menu-button{
+		height: 5em;
+		width: 9em;
+	}
+
+	fieldset{
+		padding-left: 0;
+	}
+
+	fieldset button{
+		width: 45px;
+		font-size: 0;
+		margin: 5px;
+	}
+
+}
