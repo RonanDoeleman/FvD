@@ -131,7 +131,38 @@ Code:
 
 <img width="568" alt="Screenshot 2023-04-11 at 20 59 31" src="https://user-images.githubusercontent.com/56078226/231262810-00cfe1e0-0af1-4b7d-aa71-c3f0d19ab507.png">
 
+<img width="542" alt="Screenshot 2023-04-11 at 21 00 57" src="https://user-images.githubusercontent.com/56078226/231263374-4034294a-d2fa-46c7-a774-79b64203cd14.png">
 
+  ### Bevinding 4:
+  Responsive maken
+
+  #### oplossing:
+  De website moest uiteindelijk responsive zijn zodat het bruikbaar is op elk formaat scherm. Om dit toe te passen heb ik `@media-query's` gebruikt.
+  
+Code:
+
+<img width="440" alt="Screenshot 2023-04-11 at 21 05 11" src="https://user-images.githubusercontent.com/56078226/231263978-9260de7b-b20f-4741-9444-955dd9288242.png">
+<img width="440" alt="Screenshot 2023-04-11 at 21 05 05" src="https://user-images.githubusercontent.com/56078226/231263994-aa46ca5b-e03e-4c7a-ad61-39567b0e33e8.png">
+
+Laptop:
+
+![Screenshot 2023-04-11 at 21 06 23](https://user-images.githubusercontent.com/56078226/231264314-38412e62-53f2-47a9-8faf-0ded690dd665.png)
+
+Mobiel:
+
+![Screenshot 2023-04-11 at 21 06 54](https://user-images.githubusercontent.com/56078226/231264335-3a7fef13-3059-4db6-9c34-750bdc70ac40.png)
+
+  ### Bevinding 5:
+  Animatie toevoegen
+
+  #### oplossing:
+  Als je op een website komt is het handig om beweegbaare elementen te gebruiken om de aandacht van de gebruiker te trekken. Op mijn website heb ik de schoen geanimeerd zodra hij op het scherm komt.
+  
+![Screenshot 2023-04-11 at 15 15 04](https://user-images.githubusercontent.com/56078226/231265055-546a6e7b-9250-42a4-abb0-4335a12254bf.png)
+
+Code:
+
+<img width="451" alt="Screenshot 2023-04-11 at 21 10 40" src="https://user-images.githubusercontent.com/56078226/231265095-1976d37a-a2e4-43bf-9625-f49d80690d40.png">
 
 
 ## Opdracht 2 reflectie
