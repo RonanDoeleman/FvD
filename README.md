@@ -164,6 +164,7 @@ Code:
 
 <img width="451" alt="Screenshot 2023-04-11 at 21 10 40" src="https://user-images.githubusercontent.com/56078226/231265095-1976d37a-a2e4-43bf-9625-f49d80690d40.png">
 
+</details>
 
 ## Opdracht 2 reflectie
 
@@ -171,17 +172,16 @@ Code:
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  
+<img width="1434" alt="Screenshot 2023-04-11 at 21 13 45" src="https://user-images.githubusercontent.com/56078226/231265840-f98f5ca5-e71b-47c1-849e-96e851d32f6f.png">
+<img width="499" alt="Screenshot 2023-04-11 at 21 14 01" src="https://user-images.githubusercontent.com/56078226/231265870-628101fc-0825-4fc3-bb30-84aecf424864.png">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
-
+  Wat voor mijn gevoel goed ging was het toepassen van de functionaliteiten. Zelf had ik al snel door hoe je door een array van images het bijbehorende deel van de schoen kon aanpassen. Dit vergde wel veel tijd aangezien ik elk onderdeel met photoshop moest uitsnijden in 6 verschillende kleuren. Bij elkaar wel 65 plaatjes :). De drag and drop functie vondt ik allereerst ook lastig. Gelukkig wist ik wat er fout ging alleen een oplossing bedenken was een ander ding. Gelukkig nadat Sanne mij geholpen had met de drag & drop functie ging het eigenlijk voorspoedig. 
+<img width="690" alt="Screenshot 2023-04-11 at 20 53 07" src="https://user-images.githubusercontent.com/56078226/231267155-885cce13-7f22-4e6d-9f04-e76386710d52.png">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Wat lastig was vond ik het opslaan van de schoen in de localstorage. Dit is uiteindelijk ook niet gelukt helaas. Maar omdat wij developers moeten denken in oplossingen en niet in problemen, heb ik een andere manier gevonden hoe de gebruiker zijn/haar creatie kan opslaan. Namelijk met een screenshot.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
-</details>
+<img width="1434" alt="Screenshot 2023-04-11 at 21 16 00" src="https://user-images.githubusercontent.com/56078226/231266131-6dbf4b01-2a92-4c46-97b5-515d13407bb6.png">
