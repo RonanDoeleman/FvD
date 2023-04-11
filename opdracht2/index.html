@@ -38,143 +38,94 @@
 				<option>46</option>
 			</select>
 		
-			<button id="size-button" type="button" onclick="selectSize()">Choose Size</button>		
-
+			<button id="size-button" type="button" onclick="selectSize()">Choose Size</button>
+		
 		</form>
-			
-			<div class="product-container">
 
-				<form class="shoe-customizer">
+		<!-- <form>
+			<div class="size-container">
+				<div class="size-button">
+					<input type="radio" id="39" name="size-picker" onclick="myFunction(this.value)" value="39">
+						<label for="39">39</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="40" name="size-picker" onclick="myFunction(this.value)" value="40">
+						<label for="40">40</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="41" name="size-picker" onclick="myFunction(this.value)" value="41">
+						<label for="41">41</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="42" name="size-picker" onclick="myFunction(this.value)" value="42">
+						<label for="42">42</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="43" name="size-picker" onclick="myFunction(this.value)" value="43">
+						<label for="43">43</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="44" name="size-picker" onclick="myFunction(this.value)" value="44">
+						<label for="44">44</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="45" name="size-picker" onclick="myFunction(this.value)" value="45">
+						<label for="45">45</label>
+				</div>
+				<div class="size-button">
+					<input type="radio" id="46" name="size-picker" onclick="myFunction(this.value)" value="46">
+						<label for="46">46</label>
+				</div>	
 
-					<button onclick="openMenuToe()" id="toggle-menu-button" type="button">Toe Colors</button>
+						  <input type="submit" value="Choose Size">
+			</div>
+	</form> -->
 
-					<fieldset name="toe-shoe" class="hidden" id="toe-buttons">
-						<legend>Toe Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
+		<div class="product-container">
 
-					<button onclick="openMenuNose()" id="toggle-menu-button" type="button">Nose Colors</button>
+				<div id="shoe">
+					<img id="toe-shoe" src="./images/toe/ToeWhite.png" alt="Nike Dunk Shoe Toe"/>
+					<img id="nose-shoe" src="./images/nose/NoseWhite.png" alt="Nike Dunk Shoe Nose"/>
+					<img id="side-shoe" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side"/>
+					<img id="swoosh-shoe" src="./images/swoosh/SwooshWhite.png" alt="Nike Dunk Shoe Swoosh"/>
+					<img id="lace-shoe" src="./images/lace/LaceWhite.png" alt="Nike Dunk Shoe Lace"/>
+					<img id="upper-shoe" src="./images/upper/UpperWhite.png" alt="Nike Dunk Shoe Upper"/>
+					<img id="heel-shoe" src="./images/heel/HeelWhite.png" alt="Nike Dunk Shoe Heel"/>
+					<img id="back-shoe" src="./images/back/BackWhite.png" alt="Nike Dunk Shoe Back"/>
+					<img id="sole-shoe" src="./images/sole/SoleWhite.png" alt="Nike Dunk Shoe Sole"/>					
+				</div>
 
-					<fieldset name="nose-shoe" class="hidden" id="nose-buttons">
-						<legend>Nose Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuSide()" id="toggle-menu-button" type="button">Side Colors</button>
-					
-					<fieldset name="side-shoe" class="hidden" id="side-buttons">
-						<legend>Side Shoe</legend>
-						<button class="output" type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button class="output" type="button" draggable="true" value="black">Black</button>
-						<button class="output" type="button" draggable="true" value="blue">Blue</button>
-						<button class="output" type="button" draggable="true" value="lime">Lime</button>
-						<button class="output" type="button" draggable="true" value="red">Red</button>
-						<button class="output" type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuSwoosh()" id="toggle-menu-button" type="button">Swoosh Colors</button>
-
-					<fieldset name="swoosh-shoe" class="hidden" id="swoosh-buttons">
-						<legend>Swoosh Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuLace()" id="toggle-menu-button" type="button">Lace Colors</button>
-
-					<fieldset name="lace-shoe" class="hidden" id="lace-buttons">
-						<legend>Lace Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuUpper()" id="toggle-menu-button" type="button">Upper Colors</button>
-
-					<fieldset name="upper-shoe" class="hidden" id="upper-buttons">
-						<legend>Upper Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuHeel()" id="toggle-menu-button" type="button">Heel Colors</button>
-
-					<fieldset name="heel-shoe" class="hidden" id="heel-buttons">
-						<legend>Heel Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuBack()" id="toggle-menu-button" type="button">Back Colors</button>
-
-					<fieldset name="back-shoe" class="hidden" id="back-buttons">
-						<legend>Back Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="blue">Blue</button>
-						<button type="button" draggable="true" value="lime">Lime</button>
-						<button type="button" draggable="true" value="red">Red</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-
-					<button onclick="openMenuSole()" id="toggle-menu-button" type="button">Sole Colors</button>
-
-					<fieldset name="sole-shoe" class="hidden" id="sole-buttons">
-						<legend>Sole Shoe</legend>
-						<button type="button" draggable="true" aria-pressed="true" value="white">White</button>
-						<button type="button" draggable="true" value="black">Black</button>
-						<button type="button" draggable="true" value="grey">Grey</button>
-					</fieldset>
-				</form>
-
-					<div class="shoe-container">
-						<img id="toe-shoe" data-color="white" src="./images/toe/ToeWhite.png" alt="Nike Dunk Shoe Toe" />
-						<img id="nose-shoe" data-color="white" src="./images/nose/NoseWhite.png" alt="Nike Dunk Shoe Nose" />
-						<img id="side-shoe" data-color="white" src="./images/side/SideWhite.png" alt="Nike Dunk Shoe Side" />
-						<img id="swoosh-shoe" data-color="white" src="./images/swoosh/SwooshWhite.png" alt="Nike Dunk Shoe Swoosh"/>
-						<img id="lace-shoe" data-color="white" src="./images/lace/LaceWhite.png" alt="Nike Dunk Shoe Lace"/>
-						<img id="upper-shoe" data-color="white" src="./images/upper/UpperWhite.png" alt="Nike Dunk Shoe Upper"/>
-						<img id="heel-shoe" data-color="white" src="./images/heel/HeelWhite.png" alt="Nike Dunk Shoe Heel"/>
-						<img id="sole-shoe" data-color="white" src="./images/sole/SoleWhite.png" alt="Nike Dunk Shoe Sole"/>
-						<img id="back-shoe" data-color="white" src="./images/back/BackWhite.png" alt="Nike Dunk Shoe Back"/>
-					</div>
+				<div class="buttons-container">
+					<button id="customize-button" onclick="openMenu()">Start Customizing!</button>
 				
-			</div>
+					<div id="myDIV">
+						<button id="toe-button" onclick="nextToeImage()" type="button">Toe</button>
+						<button id="nose-button"onclick="nextNoseImage()" type="button">Nose</button>
+						<button id="side-button"onclick="nextSideImage()" type="button">Side</button>
+						<button id="swoosh-button"onclick="nextSwooshImage()" type="button">Swoosh</button>
+						<button id="lace-button"onclick="nextLaceImage()" type="button">Laces</button>
+						<button id="upper-button"onclick="nextUpperImage()" type="button">Upper</button>
+						<button id="heel-button"onclick="nextHeelImage()" type="button">Heel</button>
+						<button id="back-button"onclick="nextBackImage()" type="button">Back</button>
+						<button id="sole-button"onclick="nextSoleImage()" type="button">Sole</button>
+						<button id="save">Save</button>
+					</div>	
+				</div>
+		</div>	
 
-			<button id="src-btn"></button>
-			<div class="src-preview">
-				<div class="screenshot"></div>
-			</div>
-			
+		<!-- <div>
+			<img src="images/sole/SoleBlack.png" id="color" ondragstart="dragStartHandler(event);" draggable="true">
+			</img>
+		</div>
+		<div id="target"
+      			ondrop="dropHandler(event);"
+     			 ondragover="dragOverHandler(event);">
+     			 Drop Zone
+		</div> -->
 	</div>
 	
 
-	<script src="scripts/script.js"></script>
+	<script defer src="scripts/script.js"></script>
 
 	
 </body>
