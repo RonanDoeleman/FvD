@@ -1,9 +1,3 @@
-function selectSize() {
-    var x = document.getElementById("sizeList");
-    var i = x.selectedIndex;
-    document.getElementById("sizeChosen").innerHTML = x.options[i].text;
-}
-
 // function openMenu() {
 //     var x = document.getElementById("shoe-buttons");
 //     if (x.style.display === "none") {
@@ -525,104 +519,76 @@ function selectSize() {
 //   nose.dataset.color = currentNose;
 // });
 
-function openMenuToe() {
-    var x = document.getElementById("toe-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
+// De gebruiker kan verschillende delen van de schoen aanpassen via een menu
+
+// const openMenuToe = document.getElementById("toggle-menu-button-toe");
+// openMenuToe.addEventListener("click", toggleMenu);
+
+// const openMenuNose = document.getElementById("toggle-menu-button-nose");
+// openMenuNose.addEventListener("click", toggleMenu);
+
+// const openMenuSide = document.getElementById("toggle-menu-button-side");
+// openMenuSide.addEventListener("click", toggleMenu);
+
+// const openMenuSwoosh = document.getElementById("toggle-menu-button-swoosh");
+// openMenuSwoosh.addEventListener("click", toggleMenu);
+
+// const openMenuLace = document.getElementById("toggle-menu-button-lace");
+// openMenuLace.addEventListener("click", toggleMenu);
+
+// const openMenuUpper = document.getElementById("toggle-menu-button-upper");
+// openMenuUpper.addEventListener("click", toggleMenu);
+
+// const openMenuHeel = document.getElementById("toggle-menu-button-heel");
+// openMenuHeel.addEventListener("click", toggleMenu);
+
+// const openMenuBack = document.getElementById("toggle-menu-button-back");
+// openMenuBack.addEventListener("click", toggleMenu);
+
+// const openMenuSole = document.getElementById("toggle-menu-button-sole");
+// openMenuSole.addEventListener("click", toggleMenu);
+
+// function toggleMenu(event) {
+//   const buttonId = event.target.id;
+//   const fieldsetId = buttonId.replace("toggle-menu-button-", "");
+
+//   const currentOpenFieldset = document.querySelector(`fieldset:not(.hidden):not(#${fieldsetId}-buttons)`);
+//   if (currentOpenFieldset) {
+//     currentOpenFieldset.classList.add("hidden");
+//   }
+
+//   const targetFieldset = document.getElementById(`${fieldsetId}-buttons`);
+//   targetFieldset.classList.toggle("hidden");
+// }
+
+// De gebruiker kan zijn/haar maat selecteren en displayen
+
+let mybtn = document.getElementById("size-button")
+mybtn.addEventListener("click", sizes)
+
+function sizes() {
+    var x = document.getElementById("sizeList");
+    var i = x.selectedIndex;
+    document.getElementById("sizeChosen").innerHTML = x.options[i].text;
 }
 
-document.getElementById("toe-buttons").style.display = "none";
+// De gebruiker kan verschillende delen van de schoen aanpassen via een uitklapbaar menu
 
-function openMenuNose() {
-    var x = document.getElementById("nose-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
+const toggleButtons = document.querySelectorAll('[id^="toggle-menu-button-"]');
+toggleButtons.forEach(button => button.addEventListener("click", toggleMenu));
+
+function toggleMenu(event) {
+  const buttonId = event.target.id;
+  const fieldsetId = buttonId.replace("toggle-menu-button-", "");
+
+  const currentOpenFieldset = document.querySelector(`fieldset:not(.hidden):not(#${fieldsetId}-buttons)`);
+  if (currentOpenFieldset) {
+    currentOpenFieldset.classList.add("hidden");
+  }
+
+  const gekozenFieldset = document.getElementById(`${fieldsetId}-buttons`);
+  gekozenFieldset.classList.toggle("hidden");
 }
-
-document.getElementById("nose-buttons").style.display = "none";
-
-function openMenuSide() {
-    var x = document.getElementById("side-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("side-buttons").style.display = "none";
-
-function openMenuSwoosh() {
-    var x = document.getElementById("swoosh-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("swoosh-buttons").style.display = "none";
-
-function openMenuLace() {
-    var x = document.getElementById("lace-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("lace-buttons").style.display = "none";
-
-function openMenuUpper() {
-    var x = document.getElementById("upper-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("upper-buttons").style.display = "none";
-
-function openMenuHeel() {
-    var x = document.getElementById("heel-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("heel-buttons").style.display = "none";
-
-function openMenuBack() {
-    var x = document.getElementById("back-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("back-buttons").style.display = "none";
-
-function openMenuSole() {
-    var x = document.getElementById("sole-buttons");
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    } else {
-      x.style.display = "none";
-    }
-}
-
-document.getElementById("sole-buttons").style.display = "none";
 
 let draggedButton = null;
 let currentButton = null;
@@ -632,7 +598,7 @@ let currentColor = null;
 
 // Buttons assignen aan drag & Drop en klikken
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll("fieldset button");
 
 buttons.forEach(button => {
 
@@ -747,7 +713,7 @@ function dragend() {
 	currentColor = null;
 }
 
-const screenshotBtn = document.querySelector("#src-btn"),
+const screenshotBtn = document.querySelector("#screenshot-button"),
 screenshotPreview = document.querySelector(".src-preview"),
 closeBtn = screenshotPreview.querySelector("#close-btn");
 

@@ -37,7 +37,6 @@
 	}
 }
 
-
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -67,25 +66,25 @@ body {
 
 /* jouw code */
 
-.logo{
+header {
 	display: flex;
-	gap: 2em;
-	justify-content: center;
 	background-color: lightskyblue;
+	margin-top: 0;
+	justify-content: center;
+	gap: 1em;
 }
 
 h1 {
 	color: var(--color-text);
 }
 
-h2{
+h2 {
 	color: var(--color-text-h2);
 }
 
-.logo img{
+h1 img{
 	width: 105px;
 	height: 40px;
-	margin-top: 1em;
 }
 
 .customize-sneaker{
@@ -150,7 +149,15 @@ fieldset button {
 	margin: .5em;
 }
 
-#toggle-menu-button{
+#toggle-menu-button-toe,
+#toggle-menu-button-nose,
+#toggle-menu-button-side,
+#toggle-menu-button-swoosh,
+#toggle-menu-button-lace,
+#toggle-menu-button-upper,
+#toggle-menu-button-heel,
+#toggle-menu-button-back,
+#toggle-menu-button-sole{
 	border: 2px solid rgb(203, 203, 203);
 	inline-size: 0em;
 	font-weight: 700;
@@ -164,13 +171,29 @@ fieldset button {
 	font-family: 'Proxima-Nova'
 }
 
-#toggle-menu-button:hover{
+#toggle-menu-button-toe:hover,
+#toggle-menu-button-nose:hover,
+#toggle-menu-button-side:hover,
+#toggle-menu-button-swoosh:hover,
+#toggle-menu-button-lace:hover,
+#toggle-menu-button-upper:hover,
+#toggle-menu-button-heel:hover,
+#toggle-menu-button-back:hover,
+#toggle-menu-button-sole:hover {
 	background-color: var(--color-background-btn-hover);
 	color: white;
 	transition: 1s;
 }
 
-#toggle-menu-button:focus{
+#toggle-menu-button-toe:focus,
+#toggle-menu-button-nose:focus,
+#toggle-menu-button-side:focus,
+#toggle-menu-button-swoosh:focus,
+#toggle-menu-button-lace:focus,
+#toggle-menu-button-upper:focus,
+#toggle-menu-button-heel:focus,
+#toggle-menu-button-back:focus,
+#toggle-menu-button-sole:focus{
 	background-color: var(--color-background-btn-hover);
 	color: white;
 	transition: .7s;
@@ -215,6 +238,8 @@ button[aria-pressed="true"] {
 
 form{
 	max-width: 650px;
+	max-height: 500px;
+	overflow: scroll;
 }
 
 .shoe-customizer{
@@ -223,6 +248,12 @@ form{
 
 fieldset{
 	border: none;
+	padding-left: 0;
+	display:flex;
+}
+
+fieldset.hidden {
+	display:none;
 }
 
 legend{
@@ -256,11 +287,11 @@ legend{
 	transform: translate(-50%, -50%)
 }
 
-#src-btn, .screenshot {
+#screenshot-button, .screenshot {
 	position: fixed;
 }
 
-#src-btn {
+#screenshot-button {
 	bottom: 1em;
 	right: 1em;
 	border: none;
@@ -276,12 +307,12 @@ legend{
 	font-family: 'Proxima-Nova'
 }
 
-#src-btn img{
+#screenshot-button img{
 	height: 25px;
 	width: auto;
 }
 
-#src-btn:hover{
+#screenshot-button:hover{
 	background-color: var(--color-background-btn-hover);
 	color: white;
 	transition: 1s;
@@ -297,7 +328,7 @@ legend{
 	pointer-events: none;
 	background: rgba(0,0,0,0.65);
 	transition: all 0.15s ease;
-  }
+}
 
 .src-preview.show {
 	opacity: 1;
@@ -634,7 +665,8 @@ legend{
 	}
 
 	form{
-		max-width: 900px;
+		max-width: 950px;
+		max-height: 350px;
 	}
 	
 }
@@ -660,13 +692,17 @@ legend{
 		height: auto;
 	}
 
-	#toggle-menu-button{
+	#toggle-menu-button-toe,
+	#toggle-menu-button-nose,
+	#toggle-menu-button-side,
+	#toggle-menu-button-swoosh,
+	#toggle-menu-button-lace,
+	#toggle-menu-button-upper,
+	#toggle-menu-button-heel,
+	#toggle-menu-button-back,
+	#toggle-menu-button-sole{
 		height: 5em;
 		width: 9em;
-	}
-
-	fieldset{
-		padding-left: 0;
 	}
 
 	fieldset button{
